@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+/* HEADER */
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between; /* logo sola, menü ortaya, dil sağa */
+  align-items: center; /* dikey ortalama */
+  padding: 0px 20px;
+  background-color: rgb(1, 49, 51);
+  color: white;
+  z-index: 1000;
+}
+
+.logo img {
+  padding: 15px;
+  margin: 20px;
+  width: 100px;
+  height: auto;
+  border-radius: 30px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+a:hover {
+  text-decoration: underline; /* üzerine gelince altı çizili */
+  /* background-color: #1a0040; hover efekti */
+}
+
+.dil {
+  font-size: 14px;
+}
+
+/*mein */
+.main {
+  margin-top: 70px; /* header kadar boşluk */
+  margin-bottom: 50px; /* footer kadar boşluk */
+  padding: 80px 20px 60px;
+  text-align: center;
+}
+
+/*footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* ekranın tamamını kapla */
+  height: 50px;
+  background-color: rgb(1, 49, 51);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
