@@ -56,6 +56,44 @@ a:hover {
   padding: 80px 20px 60px;
   text-align: center;
 }
+.urunler {
+  display: flex; /* yan yana diz */
+  justify-content: space-between; /* aralarında boşluk bırak */
+  gap: 20px; /* ürünler arası boşluk */
+  margin: 20px;
+}
+
+.urun {
+  flex: 1; /* her biri eşit genişlik */
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.urun img {
+  width: 100%; /* kutunun genişliğine uy */
+  height: 300px; /* sabit yükseklik */
+  object-fit: cover; /* taşan kısımları kırp, orantıyı koru */
+  border-radius: 10px;
+}
+
+.urun h3 {
+  margin: 10px 0;
+}
+
+.urun p {
+  font-size: 14px;
+  color: #333;
+}
+
+.urun :hover {
+  cursor: pointer;
+}
+.urun h3:hover {
+  font-size: 25px;
+}
 
 /*footer */
 .footer {
